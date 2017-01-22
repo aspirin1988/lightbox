@@ -11,11 +11,11 @@
 
 
 <code>
-&lt;script src="js/lightbox.min.js"&gt;&lt;/script&gt;<br>&nbsp;
-<br />&lt;script&gt;
-<br /> window.addEventListener('load' , function ()<br /> 
-{<br /> window.LightBox('p img',1000);<br /> });
-<br />&lt;/script&gt;
+<p>&lt;script src="js/lightbox.min.js"&gt;&lt;/script&gt;</p>
+<p><br />&lt;script&gt;</p>
+<p><br /> window.addEventListener('load' , function ()<br /> </p>
+<p>{<br /> window.LightBox('p img',1000);<br /> });</p>
+<p><br />&lt;/script&gt;</p>
 </code>
 
 <selector> - css селектор изображений (обязательный параметр) 
