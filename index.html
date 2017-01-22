@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <link rel="stylesheet" href="css/lightbox.min.css">
+</head>
+<body>
+<main>
+    <p><img src="img/placeholder_800x600_1.jpg" alt=""></p>
+    <p><img src="img/placeholder_800x600_2.jpg" alt=""></p>
+    <p><img src="img/placeholder_800x600_3.jpg" alt=""></p>
+    <p><img src="img/placeholder_800x600_4.jpg" alt=""></p>
+</main>
+<div id="lightbox">
+    <div class="shadow"></div>
+    <div class="title">
+        <div class="icon">
+            <img src="img/photo_ligthbox.png" alt="">
+        </div>
+        <div class="content"></div>
+    </div>
+    <div class="container">
+        <div class="close" >
+            <a></a>
+        </div>
+        <div class="lightbox_grid">
+            <div class="row-max">
+                <div class="prev_image"></div>
+                <div class="next_image"></div>
+            </div>
+            <div class="row-min">
+                <ul class="image-list">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/lightbox.min.js"></script>
+<script>
+    window.addEventListener('load' , function ()
+    {
+        window.LightBox('p img',1000);
+    });
+</script>
+</html>
