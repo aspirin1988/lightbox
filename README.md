@@ -11,11 +11,16 @@
 
 
 <code>
-&lt;script src="js/lightbox.min.js"&gt;&lt;/script&gt;<br />&lt;script&gt;<br /> window.addEventListener('load' , function ()<br /> {<br /> window.LightBox('p img',1000);<br /> });<br />&lt;/script&gt;
+&lt;script src="js/lightbox.min.js"&gt;&lt;/script&gt;
+<br />&lt;script&gt;
+<br /> window.addEventListener('load' , function ()<br /> 
+{<br /> window.LightBox('p img',1000);<br /> });
+<br />&lt;/script&gt;
+</code>
 
 <selector> - css селектор изображений (обязательный параметр) 
 <timeout> - отсрочка инициализации скрипта ( не обязательный параметр )
-</code>
+
 
 
 # lightbox
