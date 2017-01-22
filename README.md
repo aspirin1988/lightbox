@@ -11,7 +11,7 @@
 
 
 <code>
-&lt;script src="js/lightbox.min.js"&gt;&lt;/script&gt;&nbsp;
+&lt;script src="js/lightbox.min.js"&gt;&lt;/script&gt;<br>&nbsp;
 <br />&lt;script&gt;
 <br /> window.addEventListener('load' , function ()<br /> 
 {<br /> window.LightBox('p img',1000);<br /> });
