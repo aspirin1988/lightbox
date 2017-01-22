@@ -8,7 +8,7 @@
 Для инициализации данного модуля надо подключить lightbox[.min].css и lightbox[.min].js
 
 Пример инициализации: 
-
+<code>
 <script src="lightbox.min.js"></script>
 <script>
     window.addEventListener('load' , function ()
@@ -19,7 +19,7 @@
 
 <selector> - css селектор изображений (обязательный параметр) 
 <timeout> - отсрочка инициализации скрипта ( не обязательный параметр )
-
+</code>
 
 
 # lightbox
