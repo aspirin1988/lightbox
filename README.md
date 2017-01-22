@@ -10,13 +10,11 @@
 Пример инициализации: 
 
 
-<code>
 <p>&lt;script src="js/lightbox.min.js"&gt;&lt;/script&gt;</p>
 <p><br />&lt;script&gt;</p>
 <p><br /> window.addEventListener('load' , function ()<br /> </p>
 <p>{<br /> window.LightBox('p img',1000);<br /> });</p>
 <p><br />&lt;/script&gt;</p>
-</code>
 
 <selector> - css селектор изображений (обязательный параметр) 
 <timeout> - отсрочка инициализации скрипта ( не обязательный параметр )
@@ -35,9 +33,11 @@ To initiate this module, it is necessary to connect the lightbox [.min] .css and
 Initialization example:
 
 
-<code>
-&lt;script src="js/lightbox.min.js"&gt;&lt;/script&gt;<br />&lt;script&gt;<br /> window.addEventListener('load' , function ()<br /> {<br /> window.LightBox('p img',1000);<br /> });<br />&lt;/script&gt;
-</code>
+<p>&lt;script src="js/lightbox.min.js"&gt;&lt;/script&gt;</p>
+<p><br />&lt;script&gt;</p>
+<p><br /> window.addEventListener('load' , function ()<br /> </p>
+<p>{<br /> window.LightBox('p img',1000);<br /> });</p>
+<p><br />&lt;/script&gt;</p>
 
 <selector> - css image selector (required)
 <timeout> - delaying initialization script (not required)
