@@ -8,6 +8,8 @@
 Для инициализации данного модуля надо подключить lightbox[.min].css и lightbox[.min].js
 
 Пример инициализации: 
+
+
 <code>
 &lt;script src="js/lightbox.min.js"&gt;&lt;/script&gt;<br />&lt;script&gt;<br /> window.addEventListener('load' , function ()<br /> {<br /> window.LightBox('p img',1000);<br /> });<br />&lt;/script&gt;
 
@@ -27,7 +29,10 @@ To initiate this module, it is necessary to connect the lightbox [.min] .css and
 
 Initialization example:
 
+
+<code>
 &lt;script src="js/lightbox.min.js"&gt;&lt;/script&gt;<br />&lt;script&gt;<br /> window.addEventListener('load' , function ()<br /> {<br /> window.LightBox('p img',1000);<br /> });<br />&lt;/script&gt;
+</code>
 
 <selector> - css image selector (required)
 <timeout> - delaying initialization script (not required)
