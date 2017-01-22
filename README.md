@@ -9,7 +9,7 @@
 
 Пример инициализации: 
 <code>
-<script src="lightbox.min.js"></script>
+&#60script src="lightbox.min.js"></script>
 <script>
     window.addEventListener('load' , function ()
     {
