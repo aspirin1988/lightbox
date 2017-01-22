@@ -16,8 +16,8 @@
 <p>{<br /> window.LightBox('p img',1000);<br /> });</p>
 <p><br />&lt;/script&gt;</p>
 
-&lt;selector&gt; - css селектор изображений (обязательный параметр) 
-&lt;timeout&gt; - отсрочка инициализации скрипта ( не обязательный параметр )
+<p>&lt;selector&gt; - css селектор изображений (обязательный параметр) </p>
+<p>&lt;timeout&gt; - отсрочка инициализации скрипта ( не обязательный параметр )</p>
 
 
 
@@ -39,5 +39,5 @@ Initialization example:
 <p>{<br /> window.LightBox('p img',1000);<br /> });</p>
 <p><br />&lt;/script&gt;</p>
 
-&lt;selector&gt; - css image selector (required)
-&lt;timeout&gt; - delaying initialization script (not required)
+<p>&lt;selector&gt; - css image selector (required)</p>
+<p>&lt;timeout&gt; - delaying initialization script (not required)</p>
