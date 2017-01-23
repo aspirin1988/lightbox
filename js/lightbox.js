@@ -4,13 +4,11 @@
     {
         window.LightBox = function (selector , timeout)
         {
-            var img_select;
-            var image_lists;
+            var img_select = selector;
+            var image_lists = [];
 
-            img_select = selector;
             var modal = document.querySelector('#lightbox');
             var modal_show = false;
-            image_lists = document.querySelectorAll(img_select);
             var preview = document.querySelector('#lightbox .lightbox_grid .row-max');
             var title = document.querySelector('#lightbox .title .content');
             var image_list_container = document.querySelector('#lightbox .image-list');
@@ -23,6 +21,30 @@
             var CurrentImage = 0;
             var initialPoint;
             var finalPoint;
+
+            var getImageList = function ()
+            {
+                image_lists = [];
+                if ( typeof img_select == 'object' )
+                {
+                    for ( var i = 0; i < selector.length; i++ )
+                    {
+                        var item = [];
+                        item = document.querySelectorAll(img_select[i]);
+                        for ( var j = 0; j < item.length; j++ )
+                        {
+                            image_lists.push(item[j]);
+                        }
+                    }
+                }
+                else
+                {
+                    img_select = selector;
+                    image_lists = document.querySelectorAll(img_select);
+                }
+            };
+
+            getImageList();
 
             drag.addEventListener('touchstart' , function (event)
             {
@@ -136,7 +158,8 @@
 
             var initModal = function ()
             {
-                image_lists = document.querySelectorAll(img_select);
+                getImageList();
+
                 for ( var i = 0; i < image_lists.length; i++ )
                 {
                     image_lists[i].addEventListener('click' , function (e)
