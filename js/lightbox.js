@@ -2,12 +2,14 @@
 {
     if ( !window.LightBox )
     {
-        window.LightBox = function (selector,timeout)
+        window.LightBox = function (selector , timeout)
         {
             var img_select;
             var image_lists;
 
             img_select = selector;
+            var modal = document.querySelector('#lightbox');
+            var modal_show = false;
             image_lists = document.querySelectorAll(img_select);
             var preview = document.querySelector('#lightbox .lightbox_grid .row-max');
             var title = document.querySelector('#lightbox .title .content');
@@ -64,10 +66,28 @@
                 }
             } , false);
 
+            document.addEventListener('keydown' , function (e)
+            {
+                if ( modal_show )
+                {
+                    switch ( e.key )
+                    {
+                    case 'ArrowRight':
+                        NextImage();
+                        break;
+                    case 'ArrowLeft':
+                        PrevImage();
+                        break;
+                    }
+
+                }
+            });
+
             var closeModal = function ()
             {
                 document.getElementsByTagName('html')[0].style.overflow = 'auto';
-                document.getElementById('lightbox').style.display = 'none';
+                modal.style.display = 'none';
+                modal_show = false;
             };
 
             var showModal = function (e)
@@ -89,7 +109,8 @@
                 list.classList.add('active');
                 list.scrollIntoView(true);
                 document.getElementsByTagName('html')[0].style.overflow = 'hidden';
-                document.getElementById('lightbox').style.display = 'flex';
+                modal.style.display = 'flex';
+                modal_show = true;
             };
 
             var BindList = function (e)
@@ -144,14 +165,17 @@
                 }
             };
 
-           if (timeout){
-               setTimeout(function ()
-               {
-                   initModal();
-               },timeout);
-           }else{
-               initModal();
-           }
+            if ( timeout )
+            {
+                setTimeout(function ()
+                {
+                    initModal();
+                } , timeout);
+            }
+            else
+            {
+                initModal();
+            }
 
             shadow.addEventListener('click' , function ()
             {
